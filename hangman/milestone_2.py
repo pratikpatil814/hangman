@@ -1,7 +1,7 @@
 import random
 word_list = ["apple","banana","grapes","watermelon","kiwi"]
-choice = random.choice(word_list)
-word = choice
+word = random.choice(word_list)
+print(word)
 guess = str(input("enter a single letter "))
 if not len(guess) > 1 :
     print("Good guess!")
