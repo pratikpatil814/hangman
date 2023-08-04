@@ -1,13 +1,12 @@
 import milestone_4 as ml
 def play_game(word_list):
-    num_lives = 5
-    game = ml.Hangman(word_list,num_lives)
+    game = ml.Hangman(word_list)
     while True:
-        print("----------------------------------")
-        if game.num_of_lives() == 0:
+        print("_" * 30)
+        if game.num_lives == 0:
             print('You lost!')
             break
-        elif game.num_of_letter() > 0:
+        elif game.num_letter > 0:
             game.ask_for_input()
         else :
             print("Congratulations. You won the game!") 
